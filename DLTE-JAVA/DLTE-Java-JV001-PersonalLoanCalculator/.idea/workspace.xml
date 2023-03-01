@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d986dfff-fe3c-47be-9451-402fd7e415fc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/loan/PersonalLoanCalculator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/loan/PersonalLoanCalculator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,6 +86,7 @@
       <workItem from="1677137789410" duration="140000" />
       <workItem from="1677548919741" duration="1920000" />
       <workItem from="1677614766966" duration="1846000" />
+      <workItem from="1677636670542" duration="597000" />
     </task>
     <task id="LOCAL-00001" summary="Loan Calculator">
       <created>1677549455248</created>

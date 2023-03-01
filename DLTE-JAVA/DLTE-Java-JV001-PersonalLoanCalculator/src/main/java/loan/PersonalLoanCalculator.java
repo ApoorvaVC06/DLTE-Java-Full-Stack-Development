@@ -4,6 +4,7 @@ public class PersonalLoanCalculator {
     public static void main(String[] args) {
         Integer amount=0, tenure=0; //Initializing the declared variables
         Double interest=0.0, Emi=0.0;
+
         //Read input from console (by creating an object and predefined scanner class)
         Scanner scannerobject=new Scanner(System.in);
         System.out.println("Enter the loan amount");
