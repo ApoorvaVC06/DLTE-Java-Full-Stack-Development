@@ -26,18 +26,25 @@ public class PaymentService {
         return ack;
     }
 
-    //HQL
+    //HQL--returns a list of all upi's
     public List<Integer> implementFetchUpi(){
         return paymentRepository.findAllUpi();
     }
 
-    //HQL
+    //HQL--returns a list of payee names with same ifsc code (those belong to same bank)
     public List<String> implementFetchExactPayee(String ifcsCode){
         return paymentRepository.findAllByIfscCode(ifcsCode);
     }
 
-    //Exact
-//    public List<Payment> implementFetchAllByIfsc(String ifsc){
-//        return paymentRepository.findAllByIfsc(ifsc);
-//    }
+    //Exact(ByAttribute)--returns the object(all records) of payee's with provided ifsc code
+    public List<Payment> implementFetchAllByifscCode(String ifsc){
+        return paymentRepository.findAllByifscCode(ifsc);
+    }
+
+    //UPDATE- based on some logic
+    public void implementationUpdateUpi(){ paymentRepository.updateUpi();return ;}
+
+    //SQL--get records based on given upi
+    public List<Payment> implementationGetRecords(Integer upi){ return paymentRepository.getRecordsOnUpi(upi);}
+
 }

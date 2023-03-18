@@ -48,9 +48,19 @@ public class PaymentController {
         return paymentService.implementFetchExactPayee(ifscCode);
     }
 
-//    @GetMapping("/all/{ifsc}")
-//    public List<Payment> callAllByifsc(@PathVariable("ifsc") String ifsc){
-//        return paymentService.implementFetchAllByIfsc(ifsc);
-//    }
+    @GetMapping("/all/{ifsc}")
+    public List<Payment> callAllByIfsc(@PathVariable("ifsc") String ifsc){
+        return paymentService.implementFetchAllByifscCode(ifsc);
+    }
 
+    @GetMapping("/update")
+    public void callUpdateUpi(){
+        paymentService.implementationUpdateUpi();
+        return;
+    }
+
+    @GetMapping("/records/{upi}")
+    public List<Payment> callGetRecords(@PathVariable("upi") Integer upi){
+        return paymentService.implementationGetRecords(upi);
+    }
 }
