@@ -24,6 +24,8 @@ public class Payment {
     private long accNum;
     @NonNull
     private String ifscCode;
+//    @NonNull
+//    private int contact;
     @NonNull
     private int upi;
 }

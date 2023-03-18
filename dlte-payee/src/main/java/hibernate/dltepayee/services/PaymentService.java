@@ -25,4 +25,19 @@ public class PaymentService {
         String ack=payment.getPayeeName()+" has been removed from the table records";
         return ack;
     }
+
+    //HQL
+    public List<Integer> implementFetchUpi(){
+        return paymentRepository.findAllUpi();
+    }
+
+    //HQL
+    public List<String> implementFetchExactPayee(String ifcsCode){
+        return paymentRepository.findAllByIfscCode(ifcsCode);
+    }
+
+    //Exact
+//    public List<Payment> implementFetchAllByIfsc(String ifsc){
+//        return paymentRepository.findAllByIfsc(ifsc);
+//    }
 }
